@@ -18,7 +18,7 @@ parser.add_argument('--input', dest='meter',
                     help='Binary to be executed (p.e. meterpreter)')
 parser.add_argument('--output', dest='out', help='PHP filename')
 parser.add_argument('--path', dest='pati', help='Absolute path')
-parser.add_argument('--gif', help='Add gif header')
+parser.add_argument('--gif', action="store_true", help='Add gif header')
 args = parser.parse_args()
 
 # path where the tool is installed
